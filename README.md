@@ -1,0 +1,2 @@
+# VResult
+Handle results nicely
