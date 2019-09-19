@@ -28,12 +28,12 @@ kanonViewModel.bookmarks.observe(this, Observer { result ->
 
 ViewModel class:
 
-```
-  var bookmarks: MutableLiveData<VResult<List<Bookmark>>> = MutableLiveData()
+```kotlin
+var bookmarks: MutableLiveData<VResult<List<Bookmark>>> = MutableLiveData()
 
-  fun loadBookmarks() {
-    launchListOperation(bookmarks) {
-      kanonService.userBookmarks().execute().body()
-    }
+fun loadBookmarks() {
+  launchListOperation(bookmarks) {
+    kanonService.userBookmarks().execute().body()
   }
+}
 ```
