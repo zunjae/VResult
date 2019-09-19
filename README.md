@@ -3,6 +3,7 @@ Handle results nicely
 
 ## Example usage:
 
+```kotlin
 kanonViewModel.bookmarks.observe(this, Observer { result ->
       when (result) {
         is VResult.Loading -> {
@@ -23,3 +24,4 @@ kanonViewModel.bookmarks.observe(this, Observer { result ->
         }
       }
     })
+```
