@@ -3,7 +3,12 @@ Handle results nicely
 
 ## Example usage:
 
+
+Fragment:
+
 ```kotlin
+private val kanonViewModel: KanonViewModel by sharedViewModel()
+
 kanonViewModel.bookmarks.observe(this, Observer { result ->
       when (result) {
         is VResult.Loading -> {
